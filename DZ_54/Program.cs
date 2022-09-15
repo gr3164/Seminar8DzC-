@@ -49,7 +49,7 @@ void sortRow(int[] temp, int[,] matr)
         for (int i = 0; i < matr.GetLength(0); i++)
         {
             shellSort(temp);
-            matr[k, i] = temp[i];
+            matr[k, i] = temp[matr.GetLength(0)-i-1];
         }
     }
 }
