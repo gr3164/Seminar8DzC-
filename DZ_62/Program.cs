@@ -29,7 +29,9 @@ void PrintArray(int[,] arr)
     {
         for (int j = 0; j < n; j++)
         {
-            Console.Write(arr[i, j] + "\t");
+            string str = string.Format("{0:00}", arr[i, j]);
+            Console.Write($"{str} {"\t"}");
+            // Console.Write($"{arr[i, j]}  {"\t"}");
         }
         Console.WriteLine();
         Console.WriteLine();
